@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+
+    <title>Coffe Shop</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9b24e81180.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+          <a href="index.html"><img src="images/Shiraz_Cafe__6_-removebg-preview.png" width="125" height="125"></a>
+          <div class="nav-links" id="navLinks">
+            <i class="fa-regular fa-circle-xmark" onclick="hideMenu()"></i>
+              <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html.html">ABOUT</a></li>
+                <li><a href="Menu.html">MENU</a></li>
+                <li><a href="Contact.html">CONTACT</a></li>
+
+              </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <h1>Contact Us</h1>
+    </section>
+
+
+<!-- -----contact us------- -->
+
+<section class="contact-us">
+  <div class="row">
+    <div class="contact-col">
+      <div>
+        <i class="fa fa-home"></i>
+        <span>
+          <h5>2005 Rue Sherbrooke Ouest</h5>
+          <p>Montreal, Quebec H3G 1L5, Canada</p>
+        </span>
+      </div>
+
+      <div>
+        <i class="fa fa-phone"></i>
+        <span>
+          <h5>(514) 818-2445</h5>
+          <p>Monday to Sunday, 10AM to 9PM</p>
+        </span>
+      </div>
+
+      <div>
+        <i class="fa fa-envelope-o"></i>
+        <span>
+          <h5>info@shirazcafe.com</h5>
+          <p>Email us your query</p>
+        </span>
+      </div>
+
+    </div>
+
+    <div class="contact-col">
+      <form action="">
+        <input type="text" placeholder="Enter your name" required>
+        <input type="email" placeholder="Enter Email Address" required>
+        <input type="subject" placeholder="Enter your subject" required>
+        <textarea rows="8" placeholder="Message" required></textarea>
+        <button type="submit" class="hero-btn red-btn">Send Message</button>
+
+      </form>
+    </div>
+
+  </div>
+
+</section>
+
+<!------Comment Box---- -->
+<div class="comment-box">
+  <h3>Leave a comment</h3>
+  <form class="comment-form">
+    <input type="text" placeholder="Enter Name">
+    <input type="email" placeholder="Enter Email">
+    <textarea rows="5" placeholder="Your Comment"></textarea>
+    <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+  </form>
+</div>
+
+
+
+
+
+
+
+<!-- ------Footer---- -->
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>Shiraz Café is an Iranian café and tea house, covered by a cozy and oriental atmosphere based in Montreal since 1992.<br>
+        The café specializes in herbal teas, tisanes, cold drinks, and pastries.
+        There is a wide variety of tea section for customers to make their own blends.<br>
+        Among our range of teas, Persian Fog is the most popular. We also serve breakfast, sandwiches, and salads</p>
+  
+        <div class="icons">
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-instagram"></i>
+        </div>
+        <p>Made with <i class="fa-regular fa-heart"></i> by Paria Jafarian </p>
+
+
+    </section>
+
+
+
+
+    <!-- ------JavaScript for Toggle Menu----- -->
+    <script>
+
+      var navLinks = document.getElementById("navLinks");
+      function showMenu(){
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu(){
+        navLinks.style.right = "-200px";
+      }
+
+
+    </script>
+
+
+  </body>
+
+
+
+</html>

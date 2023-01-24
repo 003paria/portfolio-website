@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+
+    <title>Coffe Shop</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/9b24e81180.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+          <a href="index.html"><img src="images/Shiraz_Cafe__6_-removebg-preview.png" width="125" height="125"></a>
+          <div class="nav-links" id="navLinks">
+            <i class="fa-regular fa-circle-xmark" onclick="hideMenu()"></i>
+              <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html.html">ABOUT</a></li>
+                <li><a href="Menu.html">MENU</a></li>
+                <li><a href="Contact.html">CONTACT</a></li>
+
+              </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <h1>About Us</h1>
+    </section>
+
+<!-- -----about us content---- -->
+<section class="about-us">
+
+  <div class="row">
+    <div class="about-col">
+      <h1>Shiraz Café</h1>
+      <p>Shiraz Café is an Iranian café and tea house, covered by a cozy and oriental atmosphere based in Montreal since 1992.
+        The café specializes in herbal teas, tisanes, cold drinks, and pastries-seven days a week.
+        There is a wide variety of tea section for customers to make their own blends.
+        Among our range of teas, Persian Fog is the most popular. We also serve breakfast, sandwiches, and salads. Our space is ideal for your daily caffeine fix or your Happy Hour gatherings.</p>
+        <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+    </div>
+
+    <div class="about-col">
+      <img src="images/pexels-dmitry-zvolskiy-2199190.jpg"
+
+    </div>
+  </div>
+
+</section>
+
+
+
+
+<!-- ------Footer---- -->
+    <section class="footer">
+  
+        <div class="icons">
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-instagram"></i>
+        </div>
+        <p>Made with <i class="fa-regular fa-heart"></i> by Paria Jafarian </p>
+
+
+    </section>
+
+
+
+
+    <!-- ------JavaScript for Toggle Menu----- -->
+    <script>
+
+      var navLinks = document.getElementById("navLinks");
+      function showMenu(){
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu(){
+        navLinks.style.right = "-200px";
+      }
+
+
+    </script>
+
+
+  </body>
+
+
+
+</html>
